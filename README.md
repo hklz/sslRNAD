@@ -28,7 +28,7 @@ Target gene sequences are filtered and normalized to standard base-pairing boxse
 Every Base-pairing box will further connect to auto-designed custom scaffold to make functional ssl-sRNA in [*sRNA_generator.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py)
 
 
-For easy construction of the ssl-sRNA library, desired ssl-sRNAs plasmids can be construted via two pairs of primer designed in [*primer_design_local.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py)
+For easy construction of the ssl-sRNA library, desired ssl-sRNAs plasmids can be construted via two pairs of primer designed in [*primer_design_local.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py). (The flank sequences of the sRNA insert sites should be saved in the [*arms.fasta*](https://github.com/hklz/sslRNAD/blob/main/arms.fasta))
 
 
 ## Usage

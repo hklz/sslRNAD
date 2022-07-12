@@ -2,8 +2,8 @@
 
 ![banner](https://github.com/hklz/sslRNAD/blob/main/img/sRNA.png)
 
-[![license](https://img.shields.io/github/license/:user/:repo.svg)](LICENSE)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![license](https://img.shields.io/badge/License-Free-yellowgreen)](LICENSE)
+[![Webserver](https://img.shields.io/badge/Webserver-available-blue)](http://www.kangzlab.cn/)
 
 This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop **RNA** **Designer** .
 **sslRNAD** is a program that allowing users to rapidly construct custom sRNAs targeting at genes of interest. This package contains a ssl-sRNA scoring function based on multiple linear regression model and related scripts to automatically generate ssl-sRNA with desired structure and activity. Moreover, batch target genes in a fasta-format file are acceptable as inputs.
@@ -32,17 +32,16 @@ For easy construction of the ssl-sRNA library, desired ssl-sRNAs plasmids can be
 
 
 ## Usage
+A simple demo is provided ```/sslRNAD/exmaple```.
 
 ```
-cd sslRNAD/exmaple
+cd ~/sslRNAD/exmaple
 python3 sRNA_generator arms.fasta test.fasta
 ```
 
 ## Citing this work
 
 
-
-### Any optional sections
 
 ## Online simplified version
 

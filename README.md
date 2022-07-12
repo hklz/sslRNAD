@@ -1,6 +1,6 @@
 # sslRNAD
 
-![banner]()
+![banner](https://github.com/hklz/sslRNAD/blob/main/img/sRNA.png)
 
 ![badge]()
 ![badge]()

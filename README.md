@@ -6,6 +6,7 @@
 [![Webserver](https://img.shields.io/badge/Webserver-available-blue)](http://www.kangzlab.cn/)
 
 This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop **RNA** **Designer** .
+
 **sslRNAD** is a program that allowing users to rapidly construct custom sRNAs targeting at genes of interest. This package contains a ssl-sRNA scoring function based on multiple linear regression model and related scripts to automatically generate ssl-sRNA with desired structure and activity. Moreover, batch target genes in a fasta-format file are acceptable as inputs.
 
 

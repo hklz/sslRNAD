@@ -7,7 +7,7 @@
 
 This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop **RNA** **Designer** .
 
-**sslRNAD** is a program that allowing users to rapidly construct custom sRNAs targeting at genes of interest. This package contains a ssl-sRNA scoring function based on multiple linear regression model and related scripts to automatically generate ssl-sRNA with desired structure and activity. Moreover, batch target genes in a fasta-format file are acceptable as inputs.
+**sslRNAD** is a program that allowing users to rapidly construct custom sRNAs targeting at genes of interest. This package contains a *ssl*-sRNA scoring function based on multiple linear regression model and related scripts to automatically generate *ssl*-sRNA with desired structure and activity. Moreover, batch target genes in a fasta-format file are acceptable as inputs and a simple demo is provided.
 
 
 ## Dependency
@@ -24,12 +24,11 @@ NUPACK v4.0.0.23 or above
 ## Auto-design pipeline
 
 
-Target gene sequences are filtered and normalized to standard base-pairing boxse of ssl-sRNA in [*input_analysis.py*](https://github.com/hklz/sslRNAD/blob/main/input_anaylsis.py)
+Target gene sequences are filtered and normalized to standard base-pairing boxse of *ssl*-sRNA in [*input_analysis.py*](https://github.com/hklz/sslRNAD/blob/main/input_anaylsis.py)
 
-Every Base-pairing box will further connect to auto-designed custom scaffold to make functional ssl-sRNA in [*sRNA_generator.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py)
+Every Base-pairing box will further connect to auto-designed custom scaffold to make functional *ssl*-sRNA in [*sRNA_generator.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py)
 
-
-For easy construction of the ssl-sRNA library, desired ssl-sRNAs plasmids can be construted via two pairs of primer designed in [*primer_design_local.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py). (The flank sequences of the sRNA insert sites should be saved in the [*arms.fasta*](https://github.com/hklz/sslRNAD/blob/main/arms.fasta))
+For easy construction of the *ssl*-sRNA library, desired *ssl*-sRNAs plasmids can be construted via two pairs of primer designed in [*primer_design_local.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py). (The flank sequences of the sRNA insert sites should be saved in the [*arms.fasta*](https://github.com/hklz/sslRNAD/blob/main/arms.fasta))
 
 
 ## Usage

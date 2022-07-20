@@ -5,9 +5,12 @@
 [![license](https://img.shields.io/badge/License-Free-yellowgreen)](LICENSE)
 [![Webserver](https://img.shields.io/badge/Webserver-available-blue)](http://www.kangzlab.cn/)
 
-This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop **RNA** **Designer** .
+This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner.
 
-**sslRNAD** is a program that allowing users to rapidly construct custom sRNAs targeting at genes of interest. This package contains a *ssl*-sRNA scoring function based on multiple linear regression model and related scripts to automatically generate *ssl*-sRNA with desired structure and activity. Moreover, batch target genes in a fasta-format file are acceptable as inputs and a simple demo is provided.
+
+**sslRNAD** is a program that allows users to design single stem loop sRNAs (*ssl-sRNA*) from scratch, to repress the expression of the gene of interest (target gene). This package contains an *ssl-sRNA* scoring function and related scripts to design automatically *ssl-sRNA* with predefined single stem loop structure and tunable regulatory activities. 
+
+Numerous ssl-sRNAs can be designed by sslRNAD for a selected gene. sslRNAD also accepts batch target genes input (DNA sequence in fasta-format). In this situation, one *ssl-sRNA* with strong activity will be designed for each target gene. For each *ssl-sRNA*, sslRNAD design simultaneously two pairs of primers, which containing the DNA sequences of the *ssl-sRNA*, the interfaced promoter (customized) and regions homologous to the expression backbone (customized vector/plasmid). With the designed primers, users can do one-pot PCR to construct the expression vector of the ssl-sRNA. A simple demo is provided. 
 
 
 ## Dependency

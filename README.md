@@ -2,7 +2,6 @@
 
 ![banner](https://github.com/hklz/sslRNAD/blob/main/img/sRNA.png)
 
-[![license](https://img.shields.io/badge/License-Free-yellowgreen)](LICENSE)
 [![Webserver](https://img.shields.io/badge/Webserver-available-blue)](http://www.kangzlab.cn/)
 
 This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner.

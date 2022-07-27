@@ -3,7 +3,7 @@ from Bio import SeqIO
 import json
 from openpyxl import Workbook
 import methods.sRNA_generator as TsR
-import methods.primer_design_test as PrD
+import methods.primer_design as PrD
 import sys, getopt
 
 class fileResult():

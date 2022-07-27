@@ -34,14 +34,18 @@ For easy construction of the *ssl*-sRNA library, desired *ssl*-sRNAs plasmids ca
 
 
 ## Usage
-A simple demo is provided ```/sslRNAD/exmaple```.
+A simple demo is provided ```/sslRNAD/Demo```.
 
 ```
-cd ~/sslRNAD/exmaple
-python3 sRNA_generator arms.fasta test.fasta
+cd ~/Demo/
+
 ```
 
-## Citing this work
+
+![image](https://github.com/hklz/sslRNAD/blob/main/img/Demo_output.png)
+
+
+![image](https://github.com/hklz/sslRNAD/blob/main/img/Programmable_strength_sRNA_design.png)
 
 
 

@@ -16,12 +16,14 @@ Numerous *ssl-sRNAs* can be designed by sslRNAD for a selected gene. sslRNAD als
 ## System Requirements
 
 ### Software and OS Dependencies
-```
+
 Ubuntu 18.04
+
 Python v3.6.9 or above
-ViennaRNA v2.4.17 or above
-NUPACK v4.0.0.23 or above
-```
+
+[ViennaRNA](https://www.tbi.univie.ac.at/RNA/#download) v2.4.17 or above
+
+[NUPACK](http://www.nupack.org/downloads) v4.0.0.23 or above
 
 ### Python module
 ```
@@ -37,9 +39,17 @@ re
 
 This version of software has been tested on : Python v3.6.9 and PyCharm Community Edition 2020.2.3 are used for this study, to run the python scripts.
 
-## Usage and Demo
-A simple demo is provided ```/sslRNAD/Demo```.
-You can run the Demo scripts along with *methods folder* in the same path.
+## Instructions
+
+The original source code is in the [*methods*](https://github.com/hklz/sslRNAD/tree/main/methods) folder, and you can run sslRNAD on cmd directly using these scripts.No additional installation is needed if aforementioned dependencies are satisfied. The detail usages are demostrated on the *Demo*  section. Please make sure the ViennaRNA is set to permanent global environment variables and the *methods*  folder is in the same path of the demo scripts.
+
+## Demos
+Simple demos are provided ```/sslRNAD/Demo```.
+The [*batch_input_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/batch_input_test.fasta) contains a set of genes coding sequences that are used to generate a sRNA library targeting them. And the [*flank_sequence_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/flank_sequence_test.fasta) are composed of the flank sequences of the sRNA-insert-site and promoter sequence controling the sRNA expression.
+
+The results of sRNA library and related primers are in the [*Demo_result.xlsx*](https://github.com/hklz/sslRNAD/blob/main/Demo/Demo_results.xlsx), and the results might be different due the random generated scaffold.
+
+The Design of sRNA with desired activity targeting a single gene could be achieved by directly input the target gene sequence, repression level and the amount of generated sRNA candidates in cmd.
 
 ```
 cd ~/Demo/

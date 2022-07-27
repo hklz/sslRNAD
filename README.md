@@ -25,7 +25,7 @@ Python v3.6.9 or above
 
 [NUPACK](http://www.nupack.org/downloads) v4.0.0.23 or above
 
-### Python module
+### Python modules
 ```
 biopython
 openpyxl

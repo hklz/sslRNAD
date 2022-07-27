@@ -4,6 +4,7 @@
 
 [![Webserver](https://img.shields.io/badge/Webserver-available-blue)](http://www.kangzlab.cn/)
 ![License](https://img.shields.io/badge/License-MIT-orange)
+[![DOI](https://zenodo.org/badge/501138098.svg)](https://zenodo.org/badge/latestdoi/501138098)
 
 
 This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner.

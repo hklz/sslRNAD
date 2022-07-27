@@ -3,6 +3,8 @@
 ![banner](https://github.com/hklz/sslRNAD/blob/main/img/sRNA.png)
 
 [![Webserver](https://img.shields.io/badge/Webserver-available-blue)](http://www.kangzlab.cn/)
+![License](https://img.shields.io/badge/License-MIT-orange)
+
 
 This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner.
 
@@ -11,35 +13,45 @@ This repository is the original implementation of sslRNAD: The **S**ingle **S**t
 
 Numerous *ssl-sRNAs* can be designed by sslRNAD for a selected gene. sslRNAD also accepts batch target genes input (DNA sequence in fasta-format). In this situation, one *ssl-sRNA* with strong activity will be designed for each target gene. For each *ssl-sRNA*, sslRNAD design simultaneously two pairs of primers, which containing the DNA sequences of the *ssl-sRNA*, the interfaced promoter (customized) and regions homologous to the expression backbone (customized vector/plasmid). With the designed primers, users can do one-pot PCR to construct the expression vector of the ssl-sRNA. A simple demo is provided. 
 
+## System Requirements
 
-## Dependency
-
+### Software and OS Dependencies
+```
 Ubuntu 18.04
-
 Python v3.6.9 or above
-
 ViennaRNA v2.4.17 or above
-
 NUPACK v4.0.0.23 or above
+```
 
+### Python module
+```
+biopython
+openpyxl
+getopt
+primer3-py
+NUPACK
+subprocess
+random
+re
+```
 
-## Auto-design pipeline
+This version of software has been tested on : Python v3.6.9 and PyCharm Community Edition 2020.2.3 are used for this study, to run the python scripts.
 
-
-Target gene sequences are filtered and normalized to standard base-pairing boxse of *ssl*-sRNA in [*input_analysis.py*](https://github.com/hklz/sslRNAD/blob/main/input_anaylsis.py)
-
-Every Base-pairing box will further connect to auto-designed custom scaffold to make functional *ssl*-sRNA in [*sRNA_generator.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py)
-
-For easy construction of the *ssl*-sRNA library, desired *ssl*-sRNAs plasmids can be construted via two pairs of primer designed in [*primer_design_local.py*](https://github.com/hklz/sslRNAD/blob/main/sRNA_generator.py). (The flank sequences of the sRNA insert sites should be saved in the [*arms.fasta*](https://github.com/hklz/sslRNAD/blob/main/arms.fasta))
-
-
-## Usage
+## Usage and Demo
 A simple demo is provided ```/sslRNAD/Demo```.
+You can run the Demo scripts along with *methods folder* in the same path.
 
 ```
 cd ~/Demo/
+#As for constructing a library of target genes, an excel file containing the custom sRNAs and related primers will be generated.
+#Usage: python3 Demo_batch_design.py -s <flank_sequence.fasta> -i <batch_input_target_genes.fasta> -o <output_file_name>
+$ python3 Demo_batch_design.py -s flank_sequence_test.fasta -i batch_input_test.fasta -i batch_input_test.fasta -o Demo_results
 
+#As for creating sRNA with desired activity for a single gene, artificial sRNA candidates will be directily print on the screen.
+#Usage: python3 Programmable_strength_sRNA.py -i <Target_24_nt_sequence> -r <Repression_level> -t <Trials>
+$ python3 Programmable_strength_sRNA.py -i ATGCAGTCATCGTAGCAGTCAGTC -r S -t 5
 ```
+The demo results are as follows.
 
 
 ![image](https://github.com/hklz/sslRNAD/blob/main/img/Demo_output.png)

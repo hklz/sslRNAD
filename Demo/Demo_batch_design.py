@@ -1,3 +1,4 @@
+#Simple demo for batch-input function analysis#
 from Bio import SeqIO
 import json
 from openpyxl import Workbook
@@ -44,13 +45,6 @@ def flank_sequence_read(path):
 def inputFromfile(path, left_arm, right_arm, promoter = "ttgacagctagctcagtcctaggtataatgctagc"): #promoter_default as J23119
     targetsFromfile = targets_read(path)
     valueTotarget = {v:k for k,v in targetsFromfile.items()}
-    #read file
-    """
-    result = ""
-    for i in targetsFromfile.values():
-        result = result + valueTotarget[i] + '\n' + TsR.generater_desire_seq_file_input(Target_sequence = i) + "\n"
-    print(result)
-    """
     result = []
     for i in targetsFromfile.values():
         sRNA_seq = TsR.generater_desire_seq_file_input(Target_sequence = i[:24])

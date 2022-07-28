@@ -7,16 +7,16 @@
 [![DOI](https://zenodo.org/badge/501138098.svg)](https://zenodo.org/badge/latestdoi/501138098)
 
 
-This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner.
+This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner (WebSever: *ssl*-sRNA de novo designer).
 
 
-**sslRNAD** is a program that allows users to design single stem loop sRNAs (*ssl-sRNA*) from scratch, to repress the expression of the gene of interest (target gene). This package contains an *ssl-sRNA* scoring function and related scripts to design automatically *ssl-sRNA* with predefined single stem loop structure and tunable regulatory activities. 
+**sslRNAD** is a program that allows users to design single stem loop sRNAs (*ssl*-sRNA) from scratch, to repress the expression of the gene of interest (target gene). This package contains an *ssl*-sRNA scoring function and related scripts to design automatically *ssl*-sRNA with predefined single stem loop structure and tunable regulatory activities. 
 
-Numerous *ssl-sRNAs* can be designed by sslRNAD for a selected gene. sslRNAD also accepts batch target genes input (DNA sequence in fasta-format). In this situation, one *ssl-sRNA* with strong activity will be designed for each target gene. For each *ssl-sRNA*, sslRNAD design simultaneously two pairs of primers, which containing the DNA sequences of the *ssl-sRNA*, the interfaced promoter (customized) and regions homologous to the expression backbone (customized vector/plasmid). With the designed primers, users can do one-pot PCR to construct the expression vector of the ssl-sRNA. A simple demo is provided. 
+Numerous *ssl*-sRNAs can be designed by sslRNAD for a selected gene. sslRNAD also accepts batch target genes input (DNA sequence in fasta-format). In this situation, one *ssl-sRNA* with strong activity will be designed for each target gene. For each *ssl*-sRNA, sslRNAD design simultaneously two pairs of primers, which containing the DNA sequences of the *ssl*-sRNA, the interfaced promoter (customized) and regions homologous to the expression backbone (customized vector/plasmid). With the designed primers, users can do one-pot PCR to construct the expression vector of the *ssl*-sRNA. A simple demo is provided. 
 
 ## System Requirements
 
-### Software and OS Dependencies
+### OS and Software Dependencies
 
 Ubuntu 18.04
 
@@ -38,19 +38,19 @@ random
 re
 ```
 
-This version of software has been tested on : Python v3.6.9 and PyCharm Community Edition 2020.2.3 are used for this study, to run the python scripts.
+This version of the software has been tested on : Python v3.6.9 and PyCharm Community Edition 2020.2.3 is used for this to run the python scripts.
 
 ## Instructions
 
-The original source code is in the [*methods*](https://github.com/hklz/sslRNAD/tree/main/methods) folder, and you can run sslRNAD on cmd directly using these scripts.No additional installation is needed if aforementioned dependencies are satisfied. The detail usages are demostrated on the *Demo*  section. Please make sure the ViennaRNA is set to permanent global environment variables and the *methods*  folder is in the same path of the demo scripts.
+The original source code is in the [*methods*](https://github.com/hklz/sslRNAD/tree/main/methods) folder, and you can run sslRNAD on *cmd* directly using these scripts. No additional installation is needed if aforementioned dependencies are satisfied. The detail usages are demonstrated on the *Demo*  section. Make sure the ViennaRNA is set to permanent global environment variables and the *methods*  folder is in the same path of the demo scripts.
 
 ## Demos
 Simple demos are provided ```/sslRNAD/Demo```.
-The [*batch_input_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/batch_input_test.fasta) contains a set of genes coding sequences that are used to generate a sRNA library targeting them. And the [*flank_sequence_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/flank_sequence_test.fasta) are composed of the flank sequences of the sRNA-insert-site and promoter sequence controling the sRNA expression.
+The [*batch_input_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/batch_input_test.fasta) contains a set of genes which can be imported to sslRNAD to create a *ssl*-sRNA library. The [*flank_sequence_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/flank_sequence_test.fasta) contains the flank sequences of the *ssl*-sRNA-insertion-site on the selected vector and the selected interfaced promoter sequence, which are required for the design of primers. Experimental construction of the ssl-sRNA expression vectors can be performed via one-pot PCR with the designed primers and the selected vector (as template).
 
-The results of sRNA library and related primers are in the [*Demo_result.xlsx*](https://github.com/hklz/sslRNAD/blob/main/Demo/Demo_results.xlsx), and the results might be different due the random generated scaffold.
+The results of *ssl*-sRNA library and related primers are in the [*Demo_result.xlsx*](https://github.com/hklz/sslRNAD/blob/main/Demo/Demo_results.xlsx). Please note different results will be returned from every running of the programs, because *ssl*-sRNA sequences are generated randomly.
 
-The Design of sRNA with desired activity targeting a single gene could be achieved by directly input the target gene sequence, repression level and the amount of generated sRNA candidates in cmd.
+Design of *ssl*-sRNA with desired activity for a single gene could be achieved by directly input the target gene sequence, repression level and the number of required *ssl-sRNA* in *cmd*.
 
 ```
 cd ~/Demo/
@@ -74,5 +74,5 @@ The demo results are as follows.
 
 ## Online simplified version
 
-sslRNAD is freely available at [http://www.kangzlab.cn/](http://www.kangzlab.cn/)
+sslRNAD is freely available at [http://www.kangzlab.cn/](http://www.kangzlab.cn/) as *ssl*-sRNA *de novo* designer.
 

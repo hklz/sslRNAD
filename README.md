@@ -7,7 +7,7 @@
 [![DOI](https://zenodo.org/badge/501138098.svg)](https://zenodo.org/badge/latestdoi/501138098)
 
 
-This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner (WebSever: *ssl*-sRNA de novo designer).
+This repository is the original implementation of sslRNAD: The **S**ingle **S**tem **L**oop s**R**NA **D**esigner (WebSever: *ssl*-sRNA *de novo* designer).
 
 
 **sslRNAD** is a program that allows users to design single stem loop sRNAs (*ssl*-sRNA) from scratch, to repress the expression of the gene of interest (target gene). This package contains an *ssl*-sRNA scoring function and related scripts to design automatically *ssl*-sRNA with predefined single stem loop structure and tunable regulatory activities. 
@@ -50,15 +50,15 @@ The [*batch_input_test.fasta*](https://github.com/hklz/sslRNAD/blob/main/Demo/ba
 
 The results of *ssl*-sRNA library and related primers are in the [*Demo_result.xlsx*](https://github.com/hklz/sslRNAD/blob/main/Demo/Demo_results.xlsx). Please note different results will be returned from every running of the programs, because *ssl*-sRNA sequences are generated randomly.
 
-Design of *ssl*-sRNA with desired activity for a single gene could be achieved by directly input the target gene sequence, repression level and the number of required *ssl-sRNA* in *cmd*.
+Design of *ssl*-sRNA with desired activity for a single gene could be achieved by directly input the target gene sequence, repression level and the number of required *ssl*-sRNA in *cmd*.
 
 ```
 cd ~/Demo/
-#As for constructing a library of target genes, an excel file containing the custom sRNAs and related primers will be generated.
+#As for constructing a library of target genes, an excel file containing the custom *ssl*-sRNAs and related primers will be generated.
 #Usage: python3 Demo_batch_design.py -s <flank_sequence.fasta> -i <batch_input_target_genes.fasta> -o <output_file_name>
 $ python3 Demo_batch_design.py -s flank_sequence_test.fasta -i batch_input_test.fasta -i batch_input_test.fasta -o Demo_results
 
-#As for creating sRNA with desired activity for a single gene, artificial sRNA candidates will be directily print on the screen.
+#As for creating *ssl*-sRNA with desired activity for a single gene, *ssl*-sRNA candidates will be directily print on the screen.
 #Usage: python3 Programmable_strength_sRNA.py -i <Target_24_nt_sequence> -r <Repression_level> -t <Trials>
 $ python3 Programmable_strength_sRNA.py -i ATGCAGTCATCGTAGCAGTCAGTC -r S -t 5
 ```
